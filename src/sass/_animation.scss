@@ -1,0 +1,25 @@
+.hidden {
+    opacity: 0;
+    transition: 1s !important;
+    &.an-left {
+        transform: translateX(-2rem);
+    }
+    &.an-right {
+        transform: translateX(1rem);
+    }
+    &.an-bottom {
+        transform: translateY(1rem);
+    }
+
+}
+
+.show {
+    opacity: 1;
+    &.an-left,
+    &.an-right {
+        transform: translateX(0);
+    }
+    &.an-bottom {
+        transform: translateY(0);
+    }
+}

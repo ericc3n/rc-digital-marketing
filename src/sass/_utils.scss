@@ -1,0 +1,76 @@
+@import './variables';
+@import './dynamic-classes';
+
+// SPACING
+.section-mx {
+    margin-inline: var(--SECTION-MARGIN-X);
+}
+.el-space-1 {
+    margin-top: var(--EL-SPACE-1);
+}
+.m-space {
+    margin-top: var(--EL-SPACE-2);
+}
+.div-space{
+    margin-top: var(--DIV-SPACE);
+}
+.section-space{
+    margin-top: var(--SECTION-SPACE);
+}
+
+// MIXINS
+@mixin glow-i($color) {
+    color: $color;
+    text-shadow: 0 0 10px $color;
+}
+@mixin de-glow-i() {
+    filter: saturate(.1);
+    text-shadow: 0 0 10px transparent !important;
+}
+
+// ELEMENTS
+.btn-1 {
+    transition: .1s ease-out background-color;
+    font-size: var(--xl);
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: .5em 1.1em;
+    border: none;
+    border-radius: 8px;
+    background-color: $green-main;
+    color: $white-subtitle;
+    box-shadow: 0 0 10px 5px $green-main;
+    cursor: pointer;
+    &:hover {
+        background-color: $animation-green;
+        box-shadow: 0 0 10px 5px transparent;
+
+    }
+} 
+.btn-2 {
+    transition: .2s;
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: .5em 1.1em;
+    border: 3px solid $white-subtitle;
+    border-radius: 8px;
+    color: $white-subtitle;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+        background-color: $white-subtitle;
+        color: $bg-black-1;
+    }
+}
+
+// Text
+.glow-txt {
+    color: $white-title;
+    // text-shadow: 0 0 10px $lblue-secondary;
+    font-weight: 600;
+}
+
+// TOGGLE CLASSES
+.display-none {
+    display: none !important;
+}

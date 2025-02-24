@@ -1,0 +1,48 @@
+:root {
+    // SPACE SIZES
+    --EL-SPACE-1: 1rem;
+    --EL-SPACE-2: 1.5rem;
+    --DIV-SPACE: 2.3rem;
+    --SECTION-SPACE: 5rem;
+    --SECTION-MARGIN-X: 2rem;
+
+    // FONT SIZES
+    --xxxl: 2.25rem;
+    --xxl: 1.5rem;
+    --xl: 1.25rem;
+    --m: 1rem;
+    --s: .8rem;
+}
+
+// VIEWPORTS
+$large-vp: 476px;
+
+@media screen and (min-width: $large-vp) {
+    :root {
+        // SPACE SIZES
+        --EL-SPACE-1: 1rem;
+        --EL-SPACE-2: 1.5rem;
+        --DIV-SPACE: 2.3rem;
+        --SECTION-SPACE: 6rem;
+        --SECTION-MARGIN-X: clamp(2rem, calc(30vw - 12rem), 30rem);
+
+        // FONT SIZES
+        --xxxl: 2.25rem;
+        --xxl: 1.5rem;
+        --xl: 1.25rem;
+        --m: 1rem;
+        --s: .8rem;
+    }
+}
+
+// COLORS
+$white-text: #a4a4a4;
+$white-subtitle: #e4efeb;
+$white-title: #ffffff;
+$bg-black-1: #18191a;
+$bg-black-2: #2a2c2e;
+$bg-black-3: #183416;
+$green-main: #00bf63;
+$lblue-secondary: #b6f9f9;
+$lblue-hover: #44ebeb;
+$animation-green: #006333;
