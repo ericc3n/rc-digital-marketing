@@ -67,7 +67,7 @@ export default function Contacts() {
     <div className="contacts-page">
       <Nav />
       <main>
-        <FormProvider initalState={initialState} verificationFunc={handleSubmit}>
+        <FormProvider initialState={initialState} verificationFunc={handleSubmit}>
           <h2>Parlaci direttamente</h2>
           <NameInput />
           <EmailInput />

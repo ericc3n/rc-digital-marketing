@@ -64,6 +64,11 @@
                 color: red;
                 font-weight: 300;
             }
+            .success-message {
+                margin-top: var(--EL-SPACE-1);
+                color: $green-main;
+                font-weight: 300;
+            }
         }
     }
     

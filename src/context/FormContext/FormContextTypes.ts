@@ -15,5 +15,6 @@ interface FormContextValue {
 type Action =
   | { type: "SET_INPUT_VALUE"; field: keyof FormContextType; value: string }
   | { type: "SET_INPUT_ERROR"; field: keyof FormContextType; error: boolean }
+  | { type: "RESET" }
 
 export type { FormContextType, FormContextValue, Action }
