@@ -63,7 +63,7 @@ export default function Landing() {
             <p>Il mondo digitale ti offre varie possibilità per aumentare il tuo fatturato</p>
             <div className="simple-layout">
                 <h3>1</h3>
-                <p>Ti consente di vendere prodotti mentre stai dormendo </p>
+                <p>Ti consente di attrarre clienti da tutto il mondo </p>
             </div>
             <div className="simple-layout">
                 <h3>2</h3>
@@ -71,11 +71,11 @@ export default function Landing() {
             </div>
             <div className="simple-layout">
                 <h3>3</h3>
-                <p>Ti consente di vendere prodotti mentre stai dormendo </p>
+                <p>Ti consente di rimanere aperto durante le ferie </p>
             </div>
             <div className="simple-layout">
                 <h3>4</h3>
-                <p>Ti permette di concludere trattative ovunque nel mondo</p>
+                <p>Ti consente di chiudere trattative da parti opposte del mondo</p>
             </div>
         </div>
         </section>
