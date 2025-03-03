@@ -407,24 +407,6 @@ div.landing-page {
         }
     }
     footer {
-        .social-contact {
-            .icon.fa-telegram:hover {
-                color:#24A1DE;
-            }
-            .icon.fa-instagram:hover {
-                background: linear-gradient(
-                    to right,
-                    #833ab4, #fd1d1d, #fcb045
-                );
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                -webkit-text-fill-color: transparent; 
-            }
-            .icon.fa-discord:hover {
-                color: #5865F5;
-            }
-        }
         a:hover {
             color: $green-main;
         }

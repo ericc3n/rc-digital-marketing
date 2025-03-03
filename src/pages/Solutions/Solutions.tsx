@@ -1,24 +1,10 @@
-import { useEffect } from "react";
 import "./Solutions.scss"
 import Nav from "../../ui/Nav/Nav";
 import Footer from "../../ui/Footer/Footer";
+import { useScrollAnimation } from "../../utils/hooks";
 
 export default function Solutions() {
-    useEffect(() => {
-      // Animation
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        });
-      });
-  
-      const hiddenEls = document.querySelectorAll(".hidden");
-      hiddenEls.forEach(el => observer.observe(el));
-
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }, []);
+    useScrollAnimation();
   return (
     <div className="solutions-page">
       <Nav />

@@ -3,26 +3,12 @@ import Nav from "../../ui/Nav/Nav";
 import Footer from "../../ui/Footer/Footer";
 import "./Landing.scss";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useScrollAnimation } from "../../utils/hooks";
 
 export default function Landing() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    // Animation
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if(entry.isIntersecting) {
-              entry.target.classList.add("show");
-          }
-      });
-    });
-
-    const hiddenEls = document.querySelectorAll(".hidden");
-    hiddenEls.forEach(el => observer.observe(el));
-
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, []);
+  useScrollAnimation();
 
   return (
     <div className='landing-page'>
@@ -145,7 +131,7 @@ export default function Landing() {
                 <p><span className="evidence">Affidati</span> alla nostra esperienza per crescere la tua azienda</p>
             </div>
         </div>
-        <button className="btn-1 hidden an-bottom" onClick={() => navigate('/solutions')}>Inizia il Tuo Percorso</button>
+        <button className="btn-1 hidden an-bottom" onClick={() => navigate('/contacts')}>Inizia il Tuo Percorso</button>
       </section>
       <Footer />
     </div>
