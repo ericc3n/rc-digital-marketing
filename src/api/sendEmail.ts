@@ -2,7 +2,7 @@ import { FormContextType } from "../context/FormContext/FormContextTypes";
 
 const sendEmail = async (formData: FormContextType, signal?: AbortSignal): Promise<void> => {
   try {
-    const response = await fetch("https://formspree.io/f/movjgyvo--sdfsdfs", {
+    const response = await fetch("https://formspree.io/f/movjgyvo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
