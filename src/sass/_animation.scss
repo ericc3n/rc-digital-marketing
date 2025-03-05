@@ -1,6 +1,6 @@
 .hidden {
     opacity: 0;
-    transition: 1s !important;
+    transition: 1s opacity;
     &.an-left {
         transform: translateX(-2rem);
     }

@@ -30,19 +30,18 @@
 
 // ELEMENTS
 .btn-1 {
-    transition: .1s ease-out background-color;
+    transition: .2s ease-out;
     font-size: var(--xl);
     font-weight: 600;
-    letter-spacing: .5px;
     padding: .5em 1.1em;
     border: none;
     border-radius: 8px;
-    background-color: $green-main;
+    background-color: transparent;
     color: $white-subtitle;
-    box-shadow: 0 0 10px 5px $green-main;
+    box-shadow: 0 0 15px 8px $green-main;
     cursor: pointer;
     &:hover {
-        background-color: $animation-green;
+        background-color: $green-main;
         box-shadow: 0 0 10px 5px transparent;
     }
 } 
@@ -66,7 +65,8 @@
 .glow-txt {
     color: $white-title;
     // text-shadow: 0 0 10px $lblue-secondary;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 2.3;
 }
 
 // TOGGLE CLASSES

@@ -53,14 +53,17 @@ div.landing-page {
         align-items: center;
         margin-top: var(--DIV-SPACE);
         .card {
+            transition: .2s;
             border-radius: 10px;
             width: 280px;
             padding: var(--DIV-SPACE) 2em;
             background-color: $bg-black-2;
-    
+            &:hover {
+                box-shadow: 0 0 15px 3px $green-main;
+            }
             .icon {
-                font-size: var(--xxxl);
-                margin-bottom: var(--DIV-SPACE);
+                font-size: 2.5rem;
+                margin-bottom: var(--EL-SPACE-2);
             }
             #website-i { @include glow-i(#0076bf) }
             #web-app-i { @include glow-i(#bf2600) }

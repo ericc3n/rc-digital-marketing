@@ -1,9 +1,11 @@
-import { FaBullseye, FaGlobe, FaHandBackFist, FaHandshake, FaRocket, FaStar } from "react-icons/fa6";
+import { FaBullseye, FaGlobe, FaHandBackFist, FaHandshake, FaMedapps, FaRocket, FaStar } from "react-icons/fa6";
 import Nav from "../../ui/Nav/Nav";
 import Footer from "../../ui/Footer/Footer";
 import "./Landing.scss";
 import { useNavigate } from "react-router-dom";
 import { useScrollAnimation } from "../../utils/hooks";
+import { PiPresentationBold } from "react-icons/pi";
+import { MdManageAccounts } from "react-icons/md";
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -16,43 +18,40 @@ export default function Landing() {
       <main className="section-mx div-space">
         <div className="content">
           <h1>Porta il tuo business al livello successivo</h1>
-          <p className="div-space">Soluzioni digitali su misura per far crescere la tua azienda</p>
+          <p className="m-space glow-txt">Soluzioni digitali su misura per far crescere la tua azienda</p>
           <video autoPlay loop muted playsInline className="m-space mobile-laptop-clip">
             <source src="/assets/laptop-video.mov" />
           </video>
           <p>
-            Scopri come abbiamo già aiutato aziende come la tua a migliorare la loro presenza online.
+          Credi che sia impossibile? Scopri come abbiamo già aiutato attività come la tua a raggiungere questo obiettivo.
           </p> 
-          <button className="btn-1 m-space" onClick={() => navigate('/solutions')}>Scopri di più</button>
+          <button className="btn-1 div-space" onClick={() => navigate('/solutions')}>Scopri di più</button>
         </div>
         <video autoPlay loop muted playsInline className="large-laptop-clip">
             <source src="/assets/laptop-video.mov" />
         </video>
       </main>
-      <section className="comunication">
-        <p className="section-mx section-space">Il 70% delle aziende di successo investe nel digitale per crescere più velocemente.</p>
-      </section>
       <h1 className="section-mx section-space hidden an-left">Le nostre soluzioni</h1>
       <section className="magic-cards section-mx hidden">
         <div className="card">
-          <FaRocket id="web-app-i" className="icon" />
+          <FaMedapps id="web-app-i" className="icon" />
           <h2>Web App</h2>
           <div className="display-none-card">
-            <p>Web App personalizzate per ottimizzare e ampliare il tuo business.</p>
+            <p>Dai vita ad una realtà di interazione con il tuo cliente automatizzata</p>
           </div>
         </div>
         <div className="card">
-          <FaGlobe id="website-i" className="icon" />
-          <h2>Sito Web</h2>
+          <PiPresentationBold id="website-i" className="icon" />
+          <h2>Portfolio</h2>
           <div className="display-none-card">
-            <p>Un sito web ottimizzato per trasformare visitatori in clienti.</p>
+            <p>Presenta la tua attività online in modo verstatile ed efficace</p>
           </div>
         </div>
         <div className="card">
-          <FaStar id="improvement-i" className="icon" />
-          <h2>Ottimizzazione</h2>
+          <MdManageAccounts id="improvement-i" className="icon" />
+          <h2>Gestionale</h2>
           <div className="display-none-card">
-            <p>Miglioriamo la tua presenza online con strategie efficaci.</p>
+            <p>Gestisci tutti i dati della tua azienda direttamente dal tuo PC</p>
           </div>
         </div>
       </section>
@@ -96,7 +95,7 @@ export default function Landing() {
                 </div>
                 <div className="text-content">
                     <h2>Approccio Strategico</h2>
-                    <p>Non ci limitiamo a creare siti web: realizziamo strategie digitali per il tuo successo.</p>
+                    <p>Non ci limitiamo a creare siti web: realizziamo strategie digitali per il tuo successo</p>
                 </div>
             </div>
             <div className="goal">
@@ -105,7 +104,7 @@ export default function Landing() {
                 </div>
                 <div className="text-content">
                     <h2>Obiettivi Chiari</h2>
-                    <p>Puntiamo a risultati misurabili e concreti per la tua azienda.</p>
+                    <p>Puntiamo a risultati misurabili e concreti per la tua azienda</p>
                 </div>
             </div>
             <div className="goal">
@@ -114,23 +113,23 @@ export default function Landing() {
                 </div>
                 <div className="text-content">
                     <h2>Un Partner, non un Fornitore</h2>
-                    <p>Lavoriamo con te per costruire il tuo successo nel digitale.</p>
+                    <p>Lavoriamo con te per costruire il tuo successo nel digitale</p>
                 </div>
             </div>
         </div>
       </section>
       <section className="closure section-mx section-space">
-        <h1 className="hidden an-left">Pronto a trasformare la tua presenza online?</h1>
+        <h1 className="hidden an-left">Sei pronto a salire di livello?</h1>
         <div className="choses section-space hidden">
             <div className="bad-scenario">
-                <p>Puoi continuare come sempre...</p>
+                <p>Ignora questa occasione</p>
             </div>
             <div className="separator">Oppure</div>
             <div className="good-scenario hidden">
-                <p><span className="evidence">Inizia ora</span> a far crescere il tuo business con noi.</p>
+                <p><span className="evidence">Inizia ora</span> a far crescere il tuo business con noi</p>
             </div>
         </div>
-        <button className="btn-1 hidden an-bottom" onClick={() => navigate('/contacts')}>Contattaci</button>
+        <button className="btn-1 an-bottom" onClick={() => navigate('/contacts')}>Contattaci</button>
       </section>
       <Footer />
     </div>
