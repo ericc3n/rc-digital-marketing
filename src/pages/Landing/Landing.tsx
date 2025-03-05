@@ -1,4 +1,4 @@
-import { FaBullseye, FaGlobe, FaHandBackFist, FaHandshake, FaMedapps, FaRocket, FaStar } from "react-icons/fa6";
+import { FaBullseye, FaHandBackFist, FaHandshake, FaMedapps } from "react-icons/fa6";
 import Nav from "../../ui/Nav/Nav";
 import Footer from "../../ui/Footer/Footer";
 import "./Landing.scss";
