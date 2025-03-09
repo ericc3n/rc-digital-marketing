@@ -32,7 +32,7 @@ export default function Solutions() {
                   <p className="quotes hidden"><i className="fa-solid fa-quote-left"></i>La differenza tra un sito web eccellente e un sito web decente risiede nella capacità di trasmettere emozioni e sentimenti attraverso una semplice pagina.</p>
               </div>
           </div>
-          {/* <div className="service ads">
+          {/* <div className="service ad">
               <img src="/assets/ads.jpg" alt="ads" className="hidden an-bottom" />     
               <div className="description">
                   <h2 className="hidden an-right">Pubblicità</h2>
