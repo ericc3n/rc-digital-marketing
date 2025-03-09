@@ -4,6 +4,7 @@
 .solutions-page {
     header {
         padding-block: 8rem;
+        padding-bottom: calc(var(--SECTION-SPACE) * 2);
         text-align: center;
         background: linear-gradient(360deg, rgba(24, 52, 22, 0) 0%, rgba(71, 154, 65, 0.8) 100%);
         button {

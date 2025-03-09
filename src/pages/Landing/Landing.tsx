@@ -14,7 +14,7 @@ export default function Landing() {
     <div className='landing-page'>
       <main className="section-mx div-space">
         <div className="content">
-          <h1>Porta il tuo business al livello successivo</h1>
+          <h1 className="title-page">Porta il tuo business al livello successivo</h1>
           <p className="m-space glow-txt">Soluzioni digitali su misura per far crescere la tua azienda</p>
           <video autoPlay loop muted playsInline className="m-space mobile-laptop-clip">
             <source src="/assets/laptop-video.mov" />

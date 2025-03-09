@@ -27,6 +27,9 @@ h1 {
     font-size: var(--xxxl);
     line-height: 1.2;
     color: v.$white-title;
+    &.title-page {
+        font-size: 3.2rem;
+    }
 }
 
 h2 {

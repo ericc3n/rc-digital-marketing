@@ -19,7 +19,7 @@ export default function Footer() {
       <a href="mailto:rc0000webdesign@gmail.com">rc0000webdesign@gmail.com</a>
       <br />
       <a href="tel:+393279514494">+39 327 951 4494</a>
-      <p className="div-space">Images | Freepik</p>
+      <p className="div-space">© RC Digital Marketing</p>
     </footer>
   )
 }
