@@ -1,4 +1,4 @@
-import { useFormContext } from "../../../context/FormContext/FormContext";
+import { useFormContext } from "../../context/FormContext/FormContext";
 
 export default function NameInput() {
   const { formData, dispatch } = useFormContext();

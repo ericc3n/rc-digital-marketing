@@ -1,0 +1,45 @@
+@import "../../sass/variables";
+
+footer {
+    background-color: $bg-black-2;
+    padding: var(--EL-SPACE-2) var(--SECTION-MARGIN-X) calc(var(--EL-SPACE-2) * 4);
+    text-align: center;
+    .nav {
+        margin-top: var(--DIV-SPACE);
+        word-spacing: .2rem;
+        cursor: default;
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #6e6e6e;
+            &:hover {
+                color: $green-main;
+            }
+        }
+        .actual-page {
+            color: $white-text;
+            text-decoration: underline;
+        }
+    }
+    .social-contact {
+        margin-top: var(--EL-SPACE-2);
+        display: flex;
+        justify-content: center;
+        gap: var(--xl);
+        cursor: default;
+        font-size: var(--xxl);
+        .icon {
+            cursor: pointer;
+            &:hover { color: #06bf00; }
+        }
+    }
+    a {
+        cursor: pointer;
+        color: $white-text;
+        line-height: 1.56;
+    }
+    > p {   // #CONDIDER
+        color: #6e6e6e;
+        font-weight: 200;
+    }
+}

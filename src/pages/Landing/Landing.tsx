@@ -1,6 +1,4 @@
 import { FaBullseye, FaHandBackFist, FaHandshake, FaMedapps } from "react-icons/fa6";
-import Nav from "../../ui/Nav/Nav";
-import Footer from "../../ui/Footer/Footer";
 import "./Landing.scss";
 import { useNavigate } from "react-router-dom";
 import { useScrollAnimation } from "../../utils/hooks";
@@ -14,7 +12,6 @@ export default function Landing() {
 
   return (
     <div className='landing-page'>
-      <Nav />
       <main className="section-mx div-space">
         <div className="content">
           <h1>Porta il tuo business al livello successivo</h1>
@@ -131,7 +128,6 @@ export default function Landing() {
         </div>
         <button className="btn-1 an-bottom" onClick={() => navigate('/contacts')}>Contattaci</button>
       </section>
-      <Footer />
     </div>
   )
 }

@@ -1,13 +1,11 @@
 import "./Contacts.scss";
-import Footer from "../../ui/Footer/Footer";
-import Nav from "../../ui/Nav/Nav";
 import { useScrollAnimation } from "../../utils/hooks";
 import { FaEnvelope, FaInstagram } from "react-icons/fa6";
 import { FormProvider } from "../../context/FormContext/FormContext";
 import { FormContextType, Action } from "../../context/FormContext/FormContextTypes";
-import NameInput from "../components/Input/NameInput";
-import EmailInput from "../components/Input/EmailInput";
-import MessageInput from "../components/Input/MessageInput";
+import NameInput from "../../components/Input/NameInput";
+import EmailInput from "../../components/Input/EmailInput";
+import MessageInput from "../../components/Input/MessageInput";
 import { Dispatch } from "react";
 
 const initialState: FormContextType = {
@@ -65,7 +63,6 @@ export default function Contacts() {
 
   return (
     <div className="contacts-page">
-      <Nav />
       <main>
         <FormProvider initialState={initialState} verificationFunc={handleSubmit}>
           <h2>Parlaci direttamente</h2>
@@ -87,7 +84,6 @@ export default function Contacts() {
             </div>
         </div>
       </section>
-      <Footer />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import { FaInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import "./Footer.scss";
 
 export default function Footer() {
   return (

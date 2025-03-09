@@ -1,0 +1,16 @@
+@import "../../sass/variables";
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: $bg-black-1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--EL-SPACE-1) var(--SECTION-MARGIN-X);
+    .cursor-pointer {
+        cursor: pointer;
+    }
+}
