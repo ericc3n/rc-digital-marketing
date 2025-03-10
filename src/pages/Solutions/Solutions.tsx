@@ -1,9 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io";
 import { useScrollAnimation } from "../../utils/hooks";
 import "./Solutions.scss";
-import { FaGear, FaGlobe, FaHandshake, FaHeadset } from "react-icons/fa6";
-import { IoChatboxEllipses } from "react-icons/io5";
-import { CgWebsite } from "react-icons/cg";
 
 export default function Solutions() {
   useScrollAnimation();
@@ -20,32 +17,27 @@ export default function Solutions() {
         <h1>Web app</h1>
         <p className="el-space-1">Una web app è un’applicazione che funziona direttamente nel browser, senza bisogno di installazioni. Offre le stesse funzionalità di un software tradizionale, con il vantaggio di essere accessibile ovunque e da qualsiasi dispositivo connesso a Internet.</p>
         <div className="card-layout">
+          <img src="/assets/web-app.jpg" alt="web-app" className="side-img" />
           <ul className="text-content">
             <li>Disponibilità ovunque</li>
             <li>Supporto multiutente</li>
             <li>Aggiornamenti centralizzati</li>
             <li>Automazione dei processi</li>
           </ul>
-          <div className="side-icons">
-            {/* raccogliere in componente */}
-            <div className="icon"><FaGlobe /></div>
-            <div className="icon"><FaGear /></div>
-            <div className="icon"><IoChatboxEllipses /></div>
-          </div>
         </div>
         <div className="card-layout">
-          <div className="side-icons">
-            <div className="icon"><FaHeadset /></div>
-            <div className="icon"><FaHandshake /></div>
-            <div className="icon"><CgWebsite /></div>
-          </div>
+          <img src="/assets/layout.jpg" alt="layout" className="side-img" />
           <ul className="text-content">
             <li>Adattabilità alle esigenze aziendaliue</li>
             <li>Compatibilità universale</li>
             <li>Miglior servizio clienti</li>
-            <li>Design Intuitiva e personalizzabile</li>
+            <li>Design intuitiva e personalizzabile</li>
           </ul>
         </div>
+      </section>
+      <section className="section-mx section-space">
+        <h1>Portfolio</h1>
+        <p>Un portfolio è una raccolta organizzata di tutte le informazioni essenziali della tua attività (contatti, recensioni, servizi, ecc), in un sito web.</p>
       </section>
     </div>
   )
