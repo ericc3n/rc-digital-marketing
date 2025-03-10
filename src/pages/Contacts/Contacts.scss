@@ -55,9 +55,7 @@
         }
     }
     
-    .otherMethods {
-        padding: calc(var(--SECTION-SPACE) * .25) var(--SECTION-MARGIN-X) var(--SECTION-SPACE);
-        
+    .otherMethods {        
         .cards {
             margin-top: var(--DIV-SPACE);
             display: flex;

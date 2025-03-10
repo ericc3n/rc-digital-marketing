@@ -126,7 +126,7 @@ export default function Landing() {
                 <p><span className="evidence">Inizia ora</span> a far crescere il tuo business con noi</p>
             </div>
         </div>
-        <button className="btn-1 an-bottom" onClick={() => navigate('/contacts')}>Contattaci</button>
+        <button className="btn-2 an-bottom" onClick={() => navigate('/contacts')}>Contattaci</button>
       </section>
     </div>
   )

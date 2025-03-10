@@ -1,0 +1,45 @@
+@import "/src/sass/variables";
+
+section.management {
+    text-align: center;
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        .card {
+            transition: .2s ease-in-out;
+            align-content: center;
+            margin-top: 1.5rem;
+            background-color: $bg-black-2;
+            aspect-ratio: 1 / 1;
+            width: clamp(199px, 30%, 280px);
+            border-radius: 10px;
+            padding-inline: 1rem;
+            box-shadow: $bg-black-2 0px 1px 4px, hsl(180, 85%, 15%) 0px 0px 0px 3px;
+            &:hover {
+                box-shadow: hsla(180, 84%, 85%, 0.644) 0px 1px 4px, #b6f9f9 0px 0px 0px 3px;
+            }
+            .icon {
+                padding: .4em;
+                font-size: 3rem;
+                margin-bottom: 1.25rem;
+                line-height: 0;
+                color: $green-main;
+                background-color: $bg-black-1;
+                border-radius: 100%;
+                display: inline-block;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 710px) {
+    section.management {
+        .cards {
+            justify-content: center;
+        }
+    }
+}

@@ -26,7 +26,9 @@ section.web-app {
                 background-color: $bg-black-2;
                 padding: 1em;
                 border-radius: 10px;
-                box-shadow: rgba(182, 249, 249, 0.6) 0px 4px 12px;
+                // box-shadow: rgba(0, 191, 99, .6) 0px 3px 12px;
+                // box-shadow: rgba(0, 191, 99, .8) 0px 1px 4px;
+                box-shadow: rgba(0, 191, 99, .8) -1.95px -1.95px 2.6px;
                 &:hover {
                     box-shadow: transparent 0 0 0;
                 }

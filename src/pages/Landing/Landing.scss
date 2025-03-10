@@ -192,7 +192,6 @@ div.landing-page {
     
     .closure {
         text-align: center;
-        padding-bottom: var(--SECTION-SPACE);
         .choses {
             display: flex;
             flex-direction: column;
@@ -258,7 +257,8 @@ div.landing-page {
             }
         }
         button {
-            margin-top: calc(var(--SECTION-SPACE) - 1rem);
+            margin-top: var(--DIV-SPACE);
+            font-size: 1.5rem;
         }
     }
     
@@ -351,7 +351,6 @@ div.landing-page {
             align-items: stretch;
             .goal {
                 width: max(29%, 250px);
-                aspect-ratio: 1 / 1;
             }
         }
     }

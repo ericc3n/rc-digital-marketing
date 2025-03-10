@@ -1,8 +1,7 @@
 @import "../../sass/variables";
 
 footer {
-    margin-top: 6rem;
-    
+    margin-top: var(--SECTION-SPACE);
     background-color: $bg-black-2;
     padding: var(--EL-SPACE-2) var(--SECTION-MARGIN-X) calc(var(--EL-SPACE-2) * 4);
     text-align: center;

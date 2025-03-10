@@ -62,7 +62,7 @@ export default function Contacts() {
   useScrollAnimation();
 
   return (
-    <div className="contacts-page">
+    <div className="contacts-page section-mx">
       <main>
         <FormProvider initialState={initialState} verificationFunc={handleSubmit}>
           <h2>Parlaci direttamente</h2>

@@ -6,9 +6,9 @@ import "./PortfolioSection.scss";
 export default function PortfolioSection() {
   return (
     <section className="section-mx section-space portfolio">
-      <h1>Portfolio</h1>
-      <p className="el-space-1">Un portfolio è una raccolta organizzata di tutte le informazioni essenziali della tua attività (contatti, recensioni, servizi, ecc), in un sito web.</p>
-      <div className="grid-layout">
+      <h1 className="hidden">Portfolio</h1>
+      <p className="el-space-1 hidden">Un portfolio è una raccolta organizzata di tutte le informazioni essenziali della tua attività (contatti, recensioni, servizi, ecc), in un sito web.</p>
+      <div className="grid-layout hidden">
         <div className="card two-grid-rows">
           <FaUsers className="i" />
           <h3>Espansione del pubblico</h3>
