@@ -1,5 +1,4 @@
 @import '/src/sass/variables';
-@import '/src/sass/animation';
 
 .solutions-page {
     header {
@@ -21,58 +20,6 @@
 
             &:hover {
                 background-color: $green-main;
-            }
-        }
-    }
-    .card-layout {
-        display: flex;
-        margin-top: var(--DIV-SPACE);
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.5rem;
-        &:last-child {
-            flex-direction: row-reverse;
-        }
-        ul.text-content {
-            width: 50%;
-            max-width: 550px;
-            color: $white-subtitle;
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-content: center;
-            gap: 1.5rem;
-            li {
-                transition: .2s ease-in-out;
-                font-weight: bold;
-                background-color: $bg-black-2;
-                padding: 1em;
-                border-radius: 10px;
-                box-shadow: rgba(182, 249, 249, 0.6) 0px 4px 12px;
-                &:hover {
-                    box-shadow: transparent 0 0 0;
-                }
-            }
-        }
-        img.side-img {
-            max-height: 250px;
-            width: 50%;
-            border-radius: 12px;
-            object-fit: cover;
-        }
-    }
-}
-
-@media screen and (max-width: 785px) {
-    .solutions-page {
-        .card-layout {
-            flex-direction: column !important; 
-            ul.text-content {
-                width: 100%;
-                grid-template-columns: repeat(2, 1fr);
-            }
-            img.side-img {
-                width: 100%;
             }
         }
     }
