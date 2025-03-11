@@ -1,0 +1,2 @@
+- Fare un navbar
+- Sistemare scroll animation (an-left, an-right, ecc.)
