@@ -29,5 +29,10 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
     "vite": "^6.1.0"
+  },
+  "overrides": {
+    "micromatch": {
+      "picomatch": "^2.3.2"
+    }
   }
 }
