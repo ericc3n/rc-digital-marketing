@@ -19,8 +19,8 @@ const sendEmail = async (formData: FormContextType, signal?: AbortSignal): Promi
       const err = await response.json();
       throw err;
     }
-  } catch (err: any) {
-    if (err.name === "AbortError") {
+  } catch (err: unknown) {
+    if ((err as { name?: string } | null)?.name === "AbortError") {
       console.log("Richiesta annullata dall'utente.");
     } else {
       throw new Error("Impossibile effettuare la richiesta");
