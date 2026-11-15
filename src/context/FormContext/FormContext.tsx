@@ -59,7 +59,7 @@ const FormProvider: React.FC<{
   const handleSubmit = async (
     e: React.FormEvent,
     verificateForm: (formData: FormContextType, dispatch: Dispatch<Action>) => void
-  ): Promise<Function> => {
+  ): Promise<() => void> => {
     e.preventDefault();
     setIsLoading(true)
     setErrorMsg("");
@@ -74,11 +74,12 @@ const FormProvider: React.FC<{
       setSuccessMsg("Email inviata con successo!");
       dispatch({ type: "RESET", initialState });
 
-    } catch (error: any) {
-      if (error.name === "AbortError") {
+    } catch (error: unknown) {
+      const err = error as { name?: string; message?: string };
+      if (err.name === "AbortError") {
         console.log("Richiesta annullata");
       } else {
-        setErrorMsg(error.message);
+        setErrorMsg(err.message ?? "");
       }
     }
     finally {
